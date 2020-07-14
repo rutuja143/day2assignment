@@ -1,0 +1,27 @@
+<html>
+<head>
+<title>Rutuja:assigment 3</title>
+
+</head>
+<body>
+<h1>Assignment 3</h1>
+<p id="demo"></p>
+<script>
+var d = new Date();
+
+  var day = String(d.getDate()).padStart(2, '0');
+  var mon =String(d.getMonth()+1).padStart(2, '0');
+  var year =d.getFullYear();
+  
+  
+  var date1="Type 1 :"+mon+"-"+day+"-"+year+"<br>";
+  var date2="Type 2 :"+mon+"/"+day+"/"+year+"<br>";
+  var date3="Type 3 :"+day+"-"+mon+"-"+year+"<br>";
+  var date4="Type 4 :"+day+"/"+mon+"/"+year+"<br>";
+   document.getElementById("demo").innerHTML +=date1;
+   document.getElementById("demo").innerHTML +=date2;
+   document.getElementById("demo").innerHTML +=date3;
+   document.getElementById("demo").innerHTML +=date4;
+</script>
+</body>
+</html>

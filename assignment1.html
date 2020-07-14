@@ -1,0 +1,35 @@
+<html>
+<head>
+<title>Rutuja:assigment 1</title>
+
+</head>
+<body>
+<h1>Assignment 1</h1>
+<p id="demo"></p>
+<script>
+var d = new Date();
+  var weekday = new Array(7);
+  weekday[0] = "Sunday";
+  weekday[1] = "Monday";
+  weekday[2] = "Tuesday";
+  weekday[3] = "Wednesday";
+  weekday[4] = "Thursday";
+  weekday[5] = "Friday";
+  weekday[6] = "Saturday";
+
+  var n = weekday[d.getDay()];
+  var today="Today is :"+ n+"<br>";
+  
+  document.getElementById("demo").innerHTML=today;
+
+  var hour = d.getHours();
+  var min =d.getMinutes();
+  var sec =d.getSeconds();
+  var ampm = hour >= 12 ? 'pm' : 'am';
+  hour = hour % 12;
+  hour = hour ? hour : 12;
+  var date="Current Time is :"+ hour+ampm+":"+min+":"+sec;
+   document.getElementById("demo").innerHTML +=date;
+</script>
+</body>
+</html>
